@@ -4,12 +4,24 @@
 
 .descricao__secao{
     display: flex;
-    height: 100px;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 .descricao__item{
-    width: 33.33%;
+    width: 100%;
+    padding: 20px;
     color: #fff;
     text-align: center;
+    border-bottom: 1px solid #9baec2;
+}
+
+@media screen and (min-width:720px){
+
+    .descricao__secao{
+        flex-direction: row;
+    }
+    .descricao__item{
+        width: 33.33%;
+        border-bottom: none;
+    }
 }

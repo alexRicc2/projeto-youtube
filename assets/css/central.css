@@ -9,10 +9,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .central__titulo{
     color: #fff;
-    font-size: 4.3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: .5rem;
 }
