@@ -9,6 +9,10 @@
     text-align: center;
     padding: .5rem;
 }
+.cursos{
+    display: flex;
+    flex-direction: column;
+}
 
 .cursos__item{
     height: 100px;
@@ -44,4 +48,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+@media screen and (min-width: 679px){
+    .cursos{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cursos__item{
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1023px){
+
+    .cursos__item{
+        width: 31%;
+    }
 }

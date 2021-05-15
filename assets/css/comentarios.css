@@ -35,7 +35,6 @@
     text-align: justify;
 }
 .foto-comentario{
-    background: url("https://unavatar.now.sh/github/alexRicc2");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,4 +45,19 @@
     transform: translateY(-60%);
     border-radius: 100%;
     border: 3px solid #f7f0f5;
+}
+.comentarios__foto--paola{
+    background-image: url('../imagens/paola.jpg');
+}
+@media screen and (min-width:905px){
+
+    .comentarios__cards{
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .comentarios__card{
+        width: 28%;
+        margin-bottom: 50px;
+    }
 }
