@@ -1,11 +1,11 @@
 .cabecario{
     display: flex;
-    height: 60px;
+    justify-content: space-between;
+    height: 50px;
     background-color: #212529;
     align-items: center;
     padding: 0 .5rem;
     font-size: 13px;
-    flex-direction: column;
 }
 .logo{
     color: #fff;
@@ -17,11 +17,4 @@
 .menu__item{
     margin-left: .8rem;
     color: #fff;
-}
-
-@media screen and (min-width: 698px){
-    .cabecario{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
