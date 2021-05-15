@@ -52,6 +52,9 @@
 .comentarios__foto--matheus{
     background-image: url("https://unavatar.now.sh/github/matheuswferreira");
 }
+.comentarios__foto--thais{
+    background-image: url("../imagens/thais2.jpeg");
+}
 @media screen and (min-width:905px){
 
     .comentarios__cards{
