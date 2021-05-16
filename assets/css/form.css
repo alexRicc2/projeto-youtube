@@ -1,0 +1,26 @@
+.form__titulo{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 43px;
+    padding-top: 10px;
+    line-height: 1.2;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.form__input{
+    position: relative;
+    display: flex;
+    width: 99%;
+    height: 80px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.form__input__input{
+    display: block;
+    width: 100%;
+    padding: 0 26px;
+    border: none;
+    outline: none;
+}
