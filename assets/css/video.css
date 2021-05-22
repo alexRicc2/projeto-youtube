@@ -22,6 +22,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    margin-left: 1.5rem;
+    line-height: 1.2;
 }
 .video__lista{
     flex-grow: 1;
@@ -31,8 +34,6 @@
     
     .video{
         flex-direction: row;
-    }
-    .video__video{
-
+        padding: 5% 10% 5% 10%;
     }
 }
