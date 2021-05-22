@@ -1,51 +1,49 @@
 .comentarios{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #213248;
+    display: flex;
+    flex-direction: column;
 }
 .comentarios__titulo{
-
-    margin: 40px auto 60px auto;
-    font-size: 1.3rem;
-    text-align: center;
     color: white;
+    font-size: 1.3rem;
+    margin: 40px auto 60px auto;
+    text-align: center;
 }
 .comentarios__cards{
     display: flex;
     flex-direction: column;
+    height: auto;
     justify-content: space-evenly;
     width: 70%;
-    height: auto;
 }
 .comentarios__card{
     background-color:#f7f0f5;
-    padding: 20px;
     border-radius: 30px;
     margin-bottom: 100px;
+    padding: 20px;
 }
 .comentarios__nome{
-    text-align: center;
     color: #3b5875;
-    margin-bottom: 5px;
     font-size: 1.2rem;
-
+    margin-bottom: 5px;
+    text-align: center;
 }
 .comentario{
-    text-align: justify;
     line-height: 1.2;
+    text-align: justify;
 }
 .foto-comentario{
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #f7f0f5;
+    border-radius: 100%;
     display: block;
-    width: 90px;
     height: 90px;
     margin: auto;
     transform: translateY(-60%);
-    border-radius: 100%;
-    border: 3px solid #f7f0f5;
+    width: 90px;
 }
 .comentarios__foto--paola{
     background-image: url('../imagens/paola.jpg');
@@ -61,7 +59,6 @@
     .comentarios__cards{
         flex-direction: row;
         width: 100%;
-
     }
     .comentarios__card{
         width: 28%;

@@ -1,13 +1,13 @@
 .rodape{
-    display: flex;
     background-color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 1rem;
     text-align: center;
-    justify-content: space-around;
-    flex-direction: column;
 }
 .rodape__icones{
-    width: 24px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 24px;
 }

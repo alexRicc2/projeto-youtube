@@ -3,17 +3,17 @@
 }
 
 .descricao__secao{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #9baec2;
+    display: flex;
+    flex-direction: column;
 }
 .descricao__item{
-    width: 70%;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
     border-bottom: 1px solid #9baec2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
     
 }
 
@@ -23,7 +23,7 @@
         flex-direction: row;
     }
     .descricao__item{
-        width: 33.33%;
         border-bottom: none;
+        width: 33.33%;
     }
 }

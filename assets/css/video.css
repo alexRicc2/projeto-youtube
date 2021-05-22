@@ -1,16 +1,13 @@
 .video{
+    align-items: center;
     background-color: #213242;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 .video__descricao{
-    color: #fff;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bold;
-
 }
 .video__video{
     flex-shrink: 2;
@@ -18,22 +15,28 @@
     max-width: 100%;
 }
 .video__texto{
-    flex-grow: 1;
-    text-align: center;
+    color: #fff;
     display: flex;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
     flex-direction: column;
-    padding: 20px;
+    line-height: 2;
     margin-left: 1.5rem;
-    line-height: 1.2;
+    padding: 20px;
+    text-align: center;
+
 }
 .video__lista{
     flex-grow: 1;
-    color: #fff;
 }
 @media screen and (min-width:760px) {
     
     .video{
         flex-direction: row;
         padding: 5% 10% 5% 10%;
+    }
+    .video__texto{
+        height: 315px;
     }
 }

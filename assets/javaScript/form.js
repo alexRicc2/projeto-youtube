@@ -9,7 +9,7 @@ function valida(evento){
     const email = document.querySelector('[data-form-email]').value
     const senha = document.querySelector('[data-form-senha]').value
 
-    const emailRGEX = /^[a-z0-9.]+[@][a-z0-9]+\.[a-z0-9]+$/
+    const emailRGEX = /^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$/
     const senhaRGEX = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{8,}$/
     
     const validaEmail = emailRGEX.test(email)
@@ -34,18 +34,3 @@ function valida(evento){
     }
     
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(function (element) {
-    if (!element.hash) return;
-    if (element.origin + element.pathname !== self.location.href) return;
-    
-    (function (destination) {
-        element.addEventListener('click', function (event) {
-            window.scrollTo({
-                top: destination.offsetTop,
-                behavior: 'smooth'
-            });
-            event.preventDefault();
-        }, false);
-    })(document.querySelector(element.hash));
-});
