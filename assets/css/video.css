@@ -1,0 +1,14 @@
+.video{
+    background-color: #213242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.video__descricao{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
