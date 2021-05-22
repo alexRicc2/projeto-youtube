@@ -20,6 +20,12 @@
 .video__texto{
     flex-grow: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.video__lista{
+    flex-grow: 1;
+    color: #fff;
 }
 @media screen and (min-width:760px) {
     
