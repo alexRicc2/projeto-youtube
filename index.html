@@ -18,12 +18,12 @@
 </head>
 <body>
     <header class="cabecario">
-        <h2 class="logo"><a href="#"><img src="assets/imagens/icon_logo2.svg"></a></h2>
+        <h2 class="logo"><a href="index.html"><img src="assets/imagens/icon_logo2.svg"></a></h2>
         <nav class="menu"></nav>
             <ul class="menu__lista">
-                <li class="menu__item"><a href="#">Matricule-se</a></li class="menu__item">
-                <li class="menu__item"><a href="#">Fale Conosco</a></li>
-                <li class="menu__item"><a href="#">Instrumentos</a></li>
+                <li class="menu__item"><a href="#matricula">Matricule-se</a></li>
+                <li class="menu__item"><a href="#cursos">Cursos</a></li>
+                <li class="menu__item"><a href="#depoimentos">Fale-Conosoco</a></li>
             </ul>
         </nav>
     </header>
@@ -43,18 +43,18 @@
             </li>
             <li class="descricao__item">
                 <p>
-                    Nivel de aprendizado ajustavel a necessidade do aluno
+                    Nivel de aprendizado ajustável a necessidade do aluno
                 </p>                
             </li>
             <li class="descricao__item">
                 <p>
-                    Tenha a experiência completa, do basico ao avançado
+                    Tenha a experiência completa, do básico ao avançado
                 </p>
             </li>
         </ul>
     </section>
 
-    <section class=secao__cursos>
+    <section class=secao__cursos id="cursos">
         <h2 class="titulo">Cursos</h2>
         <nav>
             <ul class="cursos">
@@ -71,7 +71,7 @@
         </nav>
     </section>
 
-    <section class="comentarios">
+    <section class="comentarios" id="depoimentos">
 
         <h2 class="comentarios__titulo">Depoimento de quem já foi aluno</h2>
 
@@ -97,14 +97,14 @@
 
     </section>
 
-    <form class="form">
+    <form class="form" id="matricula">
         <span class="form__titulo">Já sou Aluno</span>
         <div class="form__input">
-            <input type="email" name="email" class="form__input__input" placeholder="Email">
+            <input type="email" name="email" class="form__input__input" placeholder="Email" data-form-email>
         </div>
 
         <div class="form__input">
-            <input type="password" name="password" class="form__input__input" placeholder="Password">
+            <input type="password" name="password" class="form__input__input" placeholder="Password" data-form-senha>
         </div>
         <div class="form__secao">
             <div>
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class=form__btn>
-            <button class="form__login">
+            <button class="form__login" data-form-botao>
                 Login
             </button>
         </div>
@@ -148,5 +148,7 @@
             <img src="assets/imagens/facebook-brands.svg" class="rodape__icones">
         </div>
     </footer>
+    <script src="assets/javaScript/form.js"></script>
+    <script src="assets/javaScript/scroll.js"></script>
 </body>
 </html>
