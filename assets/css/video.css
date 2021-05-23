@@ -22,7 +22,6 @@
     font-weight: bold;
     flex-direction: column;
     line-height: 2;
-    margin-left: 1.5rem;
     padding: 20px;
     text-align: center;
 
@@ -38,5 +37,6 @@
     }
     .video__texto{
         height: 315px;
+        margin-left: 1.5rem;
     }
 }

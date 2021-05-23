@@ -3,6 +3,7 @@
     background-color: #213248;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 .comentarios__titulo{
     color: white;
