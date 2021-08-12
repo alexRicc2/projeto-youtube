@@ -30,3 +30,7 @@
     padding: 1rem 2rem;
     text-decoration: none;
 }
+.btnMatricula:hover{
+    transform: scale(1.05);
+    background-color: #ccc;
+}

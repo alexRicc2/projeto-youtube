@@ -1,5 +1,4 @@
 
-
 document.querySelectorAll('a[href^="#"]').forEach(function (element) {
     if (!element.hash) return;
     if (element.origin + element.pathname !== self.location.href) return;
