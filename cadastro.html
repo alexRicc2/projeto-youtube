@@ -23,7 +23,8 @@
     </ul>
     </nav>
   </header>
-  <form onsubmit="cadastroController.next(event)" class="cadastroFormulario">
+  <div class="tela-cadastro">
+  <form onsubmit="cadastroController.next(event)" class="cadastroFormulario" id="formulario">
     <h2 class="cadastroFormulario__titulo">Informações pessoais</h2>
     <div class="div-input">
     <label for="nome">Nome Completo</label>
@@ -43,7 +44,20 @@
     </div>
     <button type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
   </form>
+  <div class="mensagem-cadastro">
+    <div class="card-mensagem">
+      <div class="card-mensagem__header">
+        <h1 class="card-mensagem__header__titulo">Informações da sua compra</h1>
+      </div>
+      <div class="card-mensagem__corpo">
+        <h2 class="card-mensagem__plano" id="planoNome">Plano da sua compra</h2>
+        <h2 class="card-mensagem__price" id="price">Preço: 00,00</h2>
+        <h3 class="card-mensagem__seguro">Compra Segura</h3>
+      </div>
 
+    </div>
+  </div>
+  </div>
   <footer class="rodape">
     <h2 class="rodape__texto"> Copyrights&copy; Autor: <a href="https://alexricc2.github.io/" class="link">Alex
         Sant'Anna</a></h2>
@@ -62,6 +76,11 @@
   <script src="assets/javaScript/CadastroController.js"></script>
   <script>
     let cadastroController = new CadastroController();
+    const URL = window.location.href;
+    let array = URL.split('?');
+    console.log(URL,array)
+    const preco = document.querySelector("#price");
+    preco.innerText = `$${array[1]}`;
   </script>
 </body>
 
