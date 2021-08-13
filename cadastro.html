@@ -74,13 +74,10 @@
   </footer>
   <script src="assets/javaScript/Cadastro.js"></script>
   <script src="assets/javaScript/CadastroController.js"></script>
+  
   <script>
     let cadastroController = new CadastroController();
-    const URL = window.location.href;
-    let array = URL.split('?');
-    console.log(URL,array)
-    const preco = document.querySelector("#price");
-    preco.innerText = `$${array[1]}`;
+   
   </script>
 </body>
 

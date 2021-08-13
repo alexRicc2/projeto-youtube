@@ -6,6 +6,15 @@ class CadastroController{
     this._inputEmail = $('#email');
     this._inputCell = $('#cell');
     this._aluno;
+
+    let arr = window.location.href.split('?');
+    this._plano = arr[1];
+    // const URL = window.location.href;
+    // let array = URL.split('?');
+    // console.log(URL,array)
+    // const preco = document.querySelector("#price");
+    // preco.innerText = `$${array[1]}`;
+
   }
   next(e){
     e.preventDefault();
@@ -18,7 +27,8 @@ class CadastroController{
       this._inputNome.value,
       this._inputCpf.value,
       this._inputEmail.value,
-      this._inputCell.value
+      this._inputCell.value,
+      this._plano
     )
   }
   _secao2(){
