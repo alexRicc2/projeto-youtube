@@ -1,3 +1,4 @@
+import {listaPlanos} from './listaPlanos.js';
 let planos = document.getElementsByClassName("plano")
 
 for(let i=0; i<planos.length;i++){
@@ -10,3 +11,8 @@ for(let i=0; i<planos.length;i++){
     event.currentTarget.classList.add("plano-selected");
   }
 }
+for(let i=0; i<planos.length;i++){
+  planos[i].querySelector('.plano__titulo').innerText = listaPlanos[i].nome;
+  planos[i].querySelector('.plano__price').innerText = `R$${listaPlanos[i].preco}`
+}
+console.log(listaPlanos)

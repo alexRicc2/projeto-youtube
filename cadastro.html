@@ -23,6 +23,7 @@
     </ul>
     </nav>
   </header>
+  <main>
   <div class="tela-cadastro">
   <form onsubmit="cadastroController.next(event)" class="cadastroFormulario" id="formulario">
     <h2 class="cadastroFormulario__titulo">Informações pessoais</h2>
@@ -51,7 +52,7 @@
       </div>
       <div class="card-mensagem__corpo">
         <h2 class="card-mensagem__plano" id="planoNome">Plano da sua compra</h2>
-        <h2 class="card-mensagem__price" id="price">Preço: 00,00</h2>
+        <h2 class="card-mensagem__price" id="planoPrice">Preço: 00,00</h2>
         <h3 class="card-mensagem__seguro">Compra Segura</h3>
       </div>
 
@@ -71,13 +72,14 @@
       <a href="https://github.com/alexRicc2" target="_blank"><img src="assets/imagens/icone_github.svg"
           class="rodape__icones"></a>
     </div>
+  </main>
   </footer>
   <script src="assets/javaScript/Cadastro.js"></script>
   <script src="assets/javaScript/CadastroController.js"></script>
-  
+  <script type="module" src="assets/javaScript/ajustaPainelPlanos.js"></script>
   <script>
     let cadastroController = new CadastroController();
-   
+    
   </script>
 </body>
 
