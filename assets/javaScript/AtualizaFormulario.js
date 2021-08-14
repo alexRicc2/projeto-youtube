@@ -42,7 +42,7 @@ class AtualizaFormulario{
     <label for="cellphone">Celular com DDD</label>
     <input id="cell" name="cellphone" type="" class="div-input__input" required>
     </div>
-    <button type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
+    <button onclick='topFunction()' type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
     </form>
     `;
     _form.innerHTML = conteudo;
@@ -96,7 +96,7 @@ class AtualizaFormulario{
       <label for="codigo">Código de Segurança (CSC)</label>
       <input id="codigo" name="codigo" type="number" class="div-input__input" required placeholder='3 dígitos'>
     </div>
-    <button type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
+    <button onclick='topFunction()' type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
     </form>
     `;
     _form.innerHTML = conteudo;

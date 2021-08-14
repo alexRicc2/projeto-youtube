@@ -16,6 +16,7 @@ class CadastroController{
     this._planoNumber = arr[1];
     AtualizaFormulario.etapa1();
   }
+
   next(e){
     e.preventDefault();
     this._pegaInfoDoForumulario1();
