@@ -23,6 +23,8 @@ body{
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   width: 250px;
 
@@ -61,6 +63,7 @@ body{
 .plano ul{
   text-align: left;
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 .plano ul li{
   line-height: 2;

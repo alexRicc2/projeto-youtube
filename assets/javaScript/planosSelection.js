@@ -11,8 +11,11 @@ for(let i=0; i<planos.length;i++){
     event.currentTarget.classList.add("plano-selected");
   }
 }
+
 for(let i=0; i<planos.length;i++){
   planos[i].querySelector('.plano__titulo').innerText = listaPlanos[i].nome;
+  planos[i].querySelector('.plano__subtitulo').innerText = listaPlanos[i].subtitulo;
   planos[i].querySelector('.plano__price').innerText = `R$${listaPlanos[i].preco}`
+  planos[i].querySelector('.plano__atributos').innerHTML = listaPlanos[i].atributos.map(atributo => `<li><i class='fas fa-check'></i>${atributo}</li>`).join("")
 }
 console.log(listaPlanos)
