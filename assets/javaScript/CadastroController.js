@@ -1,62 +1,73 @@
 class CadastroController{
   constructor(){
-    let $ = document.querySelector.bind(document);
-    this._inputNome = $('#nome');
-    this._inputCpf = $('#cpf');
-    this._inputEmail = $('#email');
-    this._inputCell = $('#cell');
+    this._nome;
+    this._cpf;
+    this._email; 
+    this._cell;
+    this._numCartao
+    this._titular
+    this._sobrenome
+    this._cod
+    this._username
+    this._senha
     this._aluno;
+
     let arr = window.location.href.split('?');
     this._planoNumber = arr[1];
+    AtualizaFormulario.etapa1();
   }
-  _
-
 
   next(e){
     e.preventDefault();
+    this._pegaInfoDoForumulario1();
+    AtualizaFormulario.etapa2();
+  }
+  _pegaInfoDoForumulario1(){
+    let $ = document.querySelector.bind(document);
+    this._nome = $('#nome').value;
+    this._cpf = $('#cpf').value;
+    this._email = $('#email').value;
+    this._cell = $('#cell').value;
+  }
+  
+  next2(e){
+    e.preventDefault();
+    this._pegaInfoDoForumulario2();
+    AtualizaFormulario.etapa3();
+  }
+  _pegaInfoDoForumulario2(){
+    let $ = document.querySelector.bind(document);
+    this._numCartao = $('#numCartao').value;
+    this._titular = $('#titular').value;
+    this._sobrenome = $('#sobrenome').value;
+    this._cod = $('#codigo').value;
+  }
+
+  next3(e){
+    e.preventDefault();
+    this._pegaInfoDoForumulario3();
     this._criaAluno();
-    console.log(this._aluno);
-    this._secao2();
+    console.log(this._aluno)
+  }
+  _pegaInfoDoForumulario3(){
+    let $ = document.querySelector.bind(document);
+    this._username = $('#username').value;
+    this._senha = $('#senha1').value;
   }
   _criaAluno(){
     this._aluno = new Cadastro(
-      this._inputNome.value,
-      this._inputCpf.value,
-      this._inputEmail.value,
-      this._inputCell.value,
+      this._nome,
+      this._cpf,
+      this._email,
+      this._cell,
+      this._numCartao,
+      this._titular,
+      this._sobrenome,
+      this._cod,
+      this._username,
+      this._senha,
       this._planoNumber
     )
   }
-  _secao2(){
-    let form = document.querySelector('#formulario');
 
-    let conteudo = `
-    <h2 class="cadastroFormulario__titulo">Informações de Pagamento</h2>
-    <div class="cartoes">
-      <span class="ccard MCARD"></span>
-      <span class="ccard hipercard"></span>
-      <span class="ccard hiper"></span>
-      <span class="ccard visa"></span>
-      <span class="ccard elo"></span>
-      <span class="ccard amex"></span>
-    </div>
-    <div class="div-input">
-      <input id="numCartao" name="numCartao" type="number" class="div-input__input" required placeholder='Numero do Cartão'>
-    </div>
-    <div class="div-input">
-      <label for="titular">Nome do Titular</label>
-      <input id="titular" name="titular" type="text" class="div-input__input" required placeholder='Nome'>
-    </div>
-    <div class="div-input">
-      <label for="sobrenome">Sobrenome</label>
-      <input id="sobrenome" name="sobrenome" type="text" class="div-input__input" required placeholder='Sobrenome'>
-    </div>
-    <div class="div-input">
-      <label for="codigo">Código de Segurança (CSC)</label>
-      <input id="codigo" name="codigo" type="number" class="div-input__input" required placeholder='3 dígitos'>
-    </div>
-    <button type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
-    `;
-    form.innerHTML = conteudo;
-  }
 }

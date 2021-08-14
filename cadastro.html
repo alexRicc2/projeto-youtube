@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="stylesheet" href="assets/css/cadastroFormulario.css">
@@ -25,26 +26,10 @@
   </header>
   <main>
   <div class="tela-cadastro">
-  <form onsubmit="cadastroController.next(event)" class="cadastroFormulario" id="formulario">
-    <h2 class="cadastroFormulario__titulo">Informações pessoais</h2>
-    <div class="div-input">
-    <label for="nome">Nome Completo</label>
-    <input id="nome" name="nome" type="text" class="div-input__input" required>
+    <div class="form-c" id="formulario">
+    
     </div>
-    <div class="div-input">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" class="div-input__input" required>
-    </div>
-    <div class="div-input">
-    <label for="cpf">CPF</label>
-    <input id="cpf" name="cpf" type="" class="div-input__input" required>
-    </div>
-    <div class="div-input">
-    <label for="cellphone">Celular com DDD</label>
-    <input id="cell" name="cellphone" type="" class="div-input__input" required>
-    </div>
-    <button type="submit" class="cadastroFormulario__submit">Continuar cadastro</button>
-  </form>
+    </form>
   <div class="mensagem-cadastro">
     <div class="card-mensagem">
       <div class="card-mensagem__header">
@@ -53,12 +38,16 @@
       <div class="card-mensagem__corpo">
         <h2 class="card-mensagem__plano" id="planoNome">Plano da sua compra</h2>
         <h2 class="card-mensagem__price" id="planoPrice">Preço: 00,00</h2>
+        <ul id="planoAtributos">
+
+        </ul>
         <h3 class="card-mensagem__seguro">Compra Segura</h3>
       </div>
 
     </div>
   </div>
   </div>
+</main>
   <footer class="rodape">
     <h2 class="rodape__texto"> Copyrights&copy; Autor: <a href="https://alexricc2.github.io/" class="link">Alex
         Sant'Anna</a></h2>
@@ -72,14 +61,17 @@
       <a href="https://github.com/alexRicc2" target="_blank"><img src="assets/imagens/icone_github.svg"
           class="rodape__icones"></a>
     </div>
-  </main>
   </footer>
   <script src="assets/javaScript/Cadastro.js"></script>
   <script src="assets/javaScript/CadastroController.js"></script>
   <script type="module" src="assets/javaScript/ajustaPainelPlanos.js"></script>
+  <script src="assets/javaScript/AtualizaFormulario.js"></script>
   <script>
     let cadastroController = new CadastroController();
-    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 </body>
 

@@ -1,11 +1,10 @@
-body{
-  background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 main{
   padding: 0 2rem;
 }
+@media screen and (max-width:768px){
+  main{padding: 0 1rem;}
+}
+
 .tela-cadastro{
   display: flex;
 }
@@ -15,17 +14,21 @@ main{
     align-items: center;
   }
 }
+.form-c{
+  min-height: 60vh;
+  min-width: 50%;
+  max-width: 600px;
+  margin: 0 2rem 2rem auto;
+}
 .cadastroFormulario{
   color: #444;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   /* align-items: center; */
-  min-height: 60vh;
-  min-width: 50%;
-  max-width: 600px;
+ 
   /* background-color: #ccc; */
-  margin: 0 2rem 2rem auto;
+  
 }
 .cadastroFormulario__titulo{
   text-align: center;
@@ -36,13 +39,53 @@ main{
   margin-bottom: 1rem;
 }
 @media screen and (max-width:768px) {
-  .cadastroFormulario{
+  .form-c{
     width: 80%;
     margin: 0 auto 2rem auto;
   }
   .cadastroFormulario__titulo{
     font-size: 1.5rem;
   }
+}
+@media screen and (max-width:375px){
+  .form-c{
+    width: 100%;
+  }
+}
+.cadastroFormulario__etapas{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+.cadastroFormulario__etapas__etapa{
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-width: 30%;
+  
+}
+.cadastroFormulario__etapas__etapaNumero{
+  color: #fff;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #79868e;
+  border-radius: 100%;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.etapaActive{
+  color: #333;
+}
+.etapaNumActive{
+  background-color: #333;
 }
 .cadastroFormulario__submit{
   border: none;
@@ -113,7 +156,14 @@ main{
 @media screen and (max-width:768px){
   .mensagem-cadastro{
     width: 80%;
+    margin-bottom: 2rem;
   }
+}
+@media screen and (max-width: 375px){
+  .mensagem-cadastro{
+    width: 100%;
+  }
+  
 }
 .card-mensagem{
   border-radius: 4px;
@@ -124,7 +174,7 @@ main{
   text-align: center;
 }
 .card-mensagem__header{
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   border: 1px solid #ccc;
 }
 .card-mensagem__header__titulo{
@@ -134,4 +184,23 @@ main{
 .card-mensagem__corpo{
   border: 1px solid #ccc;
   padding: 2rem;
+}
+.card-mensagem__corpo ul li{
+  text-align: left;
+  margin-bottom: 16px;
+  padding-left: 10%;
+}
+.card-mensagem__corpo ul li i{
+  color: #0DAB76;
+  margin-right: 12px;
+}
+.card-mensagem__plano{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card-mensagem__price{
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
