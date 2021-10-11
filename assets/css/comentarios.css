@@ -46,14 +46,14 @@
     transform: translateY(-60%);
     width: 90px;
 }
+.comentarios__foto--duofront{
+    background-image: url("https://unavatar.now.sh/github/duofront");
+}
+.comentarios__foto--alex{
+    background-image: url("https://unavatar.now.sh/github/alexRicc2");
+}
 .comentarios__foto--paola{
-    background-image: url('../imagens/paola.jpg');
-}
-.comentarios__foto--matheus{
-    background-image: url("https://unavatar.now.sh/github/matheuswferreira");
-}
-.comentarios__foto--thais{
-    background-image: url("../imagens/thais2.jpeg");
+    background-image: url("https://unavatar.now.sh/github/paolaguedes");
 }
 @media screen and (min-width:905px){
 

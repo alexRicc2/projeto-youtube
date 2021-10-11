@@ -1,6 +1,6 @@
 .video{
     align-items: center;
-    background-color: #213242;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -15,7 +15,7 @@
     max-width: 100%;
 }
 .video__texto{
-    color: #fff;
+    color: #333;
     display: flex;
     flex-grow: 1;
     font-size: 1.2rem;
